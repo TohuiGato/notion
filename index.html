@@ -1,0 +1,12 @@
+function dispalyGreetings(today){
+        hrs = today.getHours();
+        name="kleiner Engel"
+        if (hrs < 12)
+            greet = 'Guten Morgen  '+name;
+        else if (hrs >= 12 && hrs <= 17)
+            greet = 'Hallo '+name;
+        else if (hrs >= 17 && hrs <= 24)
+            greet = 'Guten Abend  '+name;
+        document.getElementById('greet').innerHTML = greet;
+
+    }
